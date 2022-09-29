@@ -25,7 +25,7 @@ const PostShare = () => {
     }
 
     return (
-        <div className='flex gap-4 bg-white z-[99] p-5 rounded-md'>
+        <div className='flex gap-4 bg-[color:var(--card-color)] z-[99] p-5 rounded-md'>
             <img src={ProfileImage} alt="profile" className='rounded-full h-[3rem] object-cover' />
             <div className='w-[80%] md:w-full'>
                 <div className='flex items-center gap-3 w-full'>
@@ -34,21 +34,21 @@ const PostShare = () => {
                     </div>
                 </div>
                 <div className='hidden md:flex justify-between items-center pt-4'>
-                    <div className='flex flex-row gap-2 text-lg cursor-pointer hover:text-orange-500'
+                    <div className='flex flex-row gap-2 text-lg cursor-pointer hover:text-[#ff5851]'
                         // When this div click, it will click also the input button below
                         onClick={() => imageRef.current.click()}>
                         <UilScenery />
                         <p>Photo</p>
                     </div>
-                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-orange-500'>
+                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-[#ff5851]'>
                         <UilPlayCircle />
                         <p>Video</p>
                     </div>
-                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-orange-500'>
+                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-[#ff5851]'>
                         <UilLocationPoint />
                         <p>Location</p>
                     </div>
-                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-orange-500'>
+                    <div className='flex flex-row gap-1 text-lg cursor-pointer hover:text-[#ff5851]'>
                         <UilSchedule />
                         <p>Schedule</p>
                     </div>

@@ -16,7 +16,7 @@ const Post = ({ data }) => {
                 {/* <AiFillHeart /> : <UilHeart className='scale-125' /> */}
                 {data.liked
                     ? <div className='pr-1'>
-                        <RiHeart3Fill className='text-orange-500' />
+                        <RiHeart3Fill className='text-[#ff5851]' />
                     </div>
 
                     : <div className="pr-1">

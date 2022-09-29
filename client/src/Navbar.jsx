@@ -17,14 +17,14 @@ const Navbar = () => {
                     <img src={Logo} alt="" className='h-[2rem] w-[2.5]' />
                     <div className='flex flex-col justify-between items-center pt-[5rem] gap-[3.5rem]'>
                         <a href="/"><UilEstate className='scale-150' /></a>
-                        <a href="/search"><UilSearch className='scale-150' /></a>
+                        <a href="/search-mobile"><UilSearch className='scale-150' /></a>
                         <a href=""><UilBell className='scale-150' /></a>
                         <a href=""><UilChat className='scale-150' /></a>
                         <a href=""><UilSetting className='scale-150' /></a>
                     </div>
                 </div>
 
-                <a href='/profile'>
+                <a href='/profile-mobile'>
                     <img src={ProfileImage} alt="profile" className='rounded-full h-[3rem] object-cover' />
                 </a>
             </div>
@@ -34,11 +34,11 @@ const Navbar = () => {
             <div className='fixed bottom-0 z-[999]'>
                 <div className='flex flex-row justify-between items-center w-screen md:hidden bg-white p-4'>
                     <a href="/"><UilEstate className='scale-125' /></a>
-                    <a href="/search"><UilSearch className='scale-125' /></a>
+                    <a href="/search-mobile"><UilSearch className='scale-125' /></a>
                     <a href=""><UilBell className='scale-125' /></a>
                     <a href=""><UilChat className='scale-125' /></a>
                     <a href=""><UilSetting className='scale-125' /></a>
-                    <a href='/profile'>
+                    <a href='/profile-mobile'>
                         <img src={ProfileImage} alt="profile" className='rounded-full h-[2.3rem] md:h-[3rem] object-cover' />
                     </a>
                 </div>

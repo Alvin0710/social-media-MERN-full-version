@@ -25,7 +25,7 @@ const FollowersCard = () => {
             })}
 
             <div className='flex justify-center items-center my-8 cursor-pointer'>
-                <span className='font-bold text-orange-500 hover:text-orange-400'>
+                <span className='font-bold text-[#ff5851] hover:text-[#ff5751c7]'>
                     Show More
                 </span>
             </div>

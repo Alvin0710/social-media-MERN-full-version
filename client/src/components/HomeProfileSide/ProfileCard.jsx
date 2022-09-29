@@ -15,25 +15,25 @@ const ProfileCard = () => {
             </div>
 
             <div className='flex flex-col items-center mt-[3rem] gap-1 py-4'>
-                <span className='font-bold text-xl'>Zendaya MJ</span>
-                <span>Senior UI/UX Designer</span>
+                <span className='font-bold text-xl text-[color:var(--text-color)]'>Zendaya MJ</span>
+                <span className='text-[color:var(--text-color)]'>Senior UI/UX Designer</span>
             </div>
 
             <div>
                 <hr className='border-gray-100 w-[70%] mx-auto' />
                 <div className='flex justify-evenly py-6'>
                     <div className='flex flex-col text-center'>
-                        <span className='font-bold text-lg'>6,890</span>
+                        <span className='font-bold text-lg text-[color:var(--text-color)]'>6,890</span>
                         <span className='text-gray-500 text-sm'>Followings</span>
                     </div>
 
                     <div className='flex flex-col text-center'>
-                        <span className='font-bold text-lg'>1</span>
+                        <span className='font-bold text-lg text-[color:var(--text-color)]'>1</span>
                         <span className='text-gray-500 text-sm'>Followers</span>
                     </div>
                     {ProfilePage && (
                         <div className='flex flex-col text-center'>
-                            <span className='font-bold text-lg'>3</span>
+                            <span className='font-bold text-lg text-[color:var(--text-color)]'>3</span>
                             <span className='text-gray-500 text-sm'>Posts</span>
                         </div>
                     )}

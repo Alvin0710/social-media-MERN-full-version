@@ -4,24 +4,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* :root {
-  --yellow: #f5c32c;
-  --orange: #fca61f;
-  --black: #242d49;
-  --gray: rgba(36, 45, 73, 0.65);
-  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
-  --hrColor: #cfcdcd;
-  --cardColor: rgba(255, 255, 255, 0.64);
-  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
-  --inputColor: rgba(40, 52, 62, 0.07);
-  --photo: #4CB256;
-  --video: #4A4EB7;
-  --location: #EF5757;
-  --shedule: #E1AE4A;
-} */
+/* #ff5851 red
+#1c1b20 dark
+#f8f8f8 white */
 
 :root {
   --card-color: #ffffffbd;
+  --main-background: #f3f3f3;
+  --text-color: #151515;
+
+  /* --dark-card-color: #000000ba;
+  --dark-main-background: #151515; 
+  --dark-text-color: #F8F8F8; */
+
+  /* --main-background: #151515; */
+
+
+  /* --card-color: #000000cb;
+  --text-color: #f8f8f8f1; */
+
 }
 
 html, body {
@@ -30,8 +31,8 @@ html, body {
 
 ::-webkit-file-upload-button {
   cursor: pointer;
-  border: 2px solid orangered;
-  color: orangered;
+  border: 2px solid #ff5851;
+  color: #ff5851;
   background-color: transparent;
   padding: 10px 20px;
   border-radius: 5px;
@@ -39,7 +40,7 @@ html, body {
 }
 
 ::-webkit-file-upload-button:hover {
-  background-color: orangered;
+  background-color: #ff5851;
   color: white;
 }
 
@@ -49,14 +50,14 @@ html, body {
 }
 
 .infoInput:focus {
-  outline: 2px solid orange;
+  outline: 2px solid #ff5851;
   background-color: var(--card-color);
 }
 
 
 @layer components {
   .button {
-    @apply bg-orange-500 text-white rounded-md hover:text-orange-500 hover:outline hover:outline-offset-[-2px] hover:outline-2 hover:border-orange-500 hover:bg-transparent
+    @apply bg-[#ff5851] text-white rounded-md hover:text-[#ff5851] hover:outline hover:outline-offset-[-2px] hover:outline-2 hover:border-[#ff5851] hover:bg-transparent
   }
 
   .info {
@@ -64,6 +65,6 @@ html, body {
   }
 
   .infoInput {
-    @apply p-4 rounded-md bg-gray-100 focus:border-orange-500 focus:outline-none
+    @apply p-4 rounded-md bg-gray-100 focus:border-[#ff5851] focus:outline-none
   }
 }

@@ -11,7 +11,7 @@ const LogoSearch = () => {
                 <div className='flex items-center justify-between bg-[#28343e12] rounded-[5px] p-[5px] w-full'>
                     <input type="text" placeholder='#Explore' className='bg-transparent border-none outline-none px-2 w-full' />
                     <div className='flex justify-center mr-2 rounded-[5px] p-[4px] text-white cursor-pointer'>
-                        <UilSearch className='text-xl font-bold text-[#ed941f]' />
+                        <UilSearch className='text-xl font-bold text-[#ff5851]' />
                     </div>
                 </div>
             </div>
