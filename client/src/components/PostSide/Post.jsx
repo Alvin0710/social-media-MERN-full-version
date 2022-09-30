@@ -16,20 +16,20 @@ const Post = ({ data }) => {
                 {/* <AiFillHeart /> : <UilHeart className='scale-125' /> */}
                 {data.liked
                     ? <div className='pr-1'>
-                        <RiHeart3Fill className='text-[#ff5851]' />
+                        <RiHeart3Fill className='text-[#ff5851] cursor-pointer' />
                     </div>
 
                     : <div className="pr-1">
-                        <RiHeart3Line />
+                        <RiHeart3Line className='cursor-pointer hover:text-[#ff5851]' />
                     </div>
                 }
                 {/* <AiOutlineMessage/> */}
                 <div className='px-2'>
-                    <UilCommentDots className='scale-[1.35]' />
+                    <UilCommentDots className='scale-[1.35] cursor-pointer hover:text-[#ff5851]' />
                 </div>
 
                 <div className='px-2'>
-                    <UilMessage className='scale-[1.3]' />
+                    <UilMessage className='scale-[1.3] cursor-pointer hover:text-[#ff5851]' />
                 </div>
                 {/* <img src={Comment} alt="" />
                 <img src={Share} alt="" /> */}

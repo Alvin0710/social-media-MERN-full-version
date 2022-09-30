@@ -14,13 +14,13 @@ const Navbar = () => {
             {/* Tablet version */}
             <div className='hidden md:flex md:flex-col md:justify-between md:items-center xl:hidden h-[91.5%] bg-white py-8 px-2 my-8 rounded-md'>
                 <div>
-                    <img src={Logo} alt="" className='h-[2rem] w-[2.5]' />
+                    <a href="/"><img src={Logo} alt="" className='h-[2rem] w-[2.5]' /></a>
                     <div className='flex flex-col justify-between items-center pt-[5rem] gap-[3.5rem]'>
-                        <a href="/"><UilEstate className='scale-150' /></a>
-                        <a href="/search-mobile"><UilSearch className='scale-150' /></a>
-                        <a href=""><UilBell className='scale-150' /></a>
-                        <a href=""><UilChat className='scale-150' /></a>
-                        <a href=""><UilSetting className='scale-150' /></a>
+                        <a href="/"><UilEstate className='scale-150 hover:text-[#ff5851]' /></a>
+                        <a href="/search-mobile"><UilSearch className='scale-150 hover:text-[#ff5851]' /></a>
+                        <a href=""><UilBell className='scale-150 hover:text-[#ff5851]' /></a>
+                        <a href=""><UilChat className='scale-150 hover:text-[#ff5851]' /></a>
+                        <a href=""><UilSetting className='scale-150 hover:text-[#ff5851]' /></a>
                     </div>
                 </div>
 

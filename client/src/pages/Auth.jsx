@@ -78,7 +78,7 @@ const Auth = () => {
 
             {/* Right Side */}
             <div className='flex items-center justify-center'>
-                <div className='bg-[color:var(--card-color)] p-[3.5rem] rounded-md w-[35rem]'>
+                <div className='bg-[color:var(--card-color)] p-4 xl:p-[3.5rem] rounded-md w-[35rem]'>
                     <form action="" className='flex flex-col gap-8' onSubmit={handleSubmit}>
                         <h3 className='text-center py-4 text-3xl text-[#ff5851] font-bold'>{isSignUp ? "Sign Up" : "Log In"}</h3>
                         <div className='flex flex-col gap-4'>
@@ -121,7 +121,7 @@ const Auth = () => {
                                     onChange={handleChange}
                                     value={data.password}
                                 />
-                                <div className='cursor-pointer absolute ml-[18rem] xl:ml-[25.5rem]' onClick={() => setVisiblePass((prev) => !prev)}>
+                                <div className='cursor-pointer ml-[-2.5rem]' onClick={() => setVisiblePass((prev) => !prev)}>
                                     {visiblePass ? <UilEye /> : <UilEyeSlash />}
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ const Auth = () => {
                                         onChange={handleChange}
                                         value={data.confirmpass}
                                     />
-                                    <div className='cursor-pointer absolute ml-[18rem] xl:ml-[25.5rem]' onClick={() => setVisibleConPass((prev) => !prev)}>
+                                    <div className='cursor-pointer ml-[-2.5rem]' onClick={() => setVisibleConPass((prev) => !prev)}>
                                         {visibleConPass ? <UilEye /> : <UilEyeSlash />}
                                     </div>
                                 </div>
