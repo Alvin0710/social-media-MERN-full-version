@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Logo from '../img/logo.png'
 import { UilEye } from '@iconscout/react-unicons'
@@ -10,6 +10,9 @@ import { signUp } from '../action/AuthAction'
 const Auth = () => {
     // Redux
     const dispatch = useDispatch()
+
+    const loading = useSelector((state) => state.authReducer.loading)
+    console.log(loading)
 
     // For Sign up and Login card
     const [isSignUp, setIsSignUp] = useState(false)
@@ -65,20 +68,20 @@ const Auth = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 xl:grid-cols-2 h-screen gap-0 xl:gap-8 relative max-w-[1200px] mx-auto'>
+        <div className='grid grid-cols-1 xl:grid-cols-2 px-4 h-screen gap-0 xl:gap-9 relative max-w-[1200px] mx-auto'>
             {/* Left Side */}
-            <div className='flex justify-center items-center gap-4'>
-                <img src={Logo} alt="logo" className='w-[6rem] h-[5rem]' />
+            <div className='flex justify-center items-center gap-6'>
+                <img src={Logo} alt="logo" className='w-[8rem] h-[7rem]' />
                 <div>
-                    <h1 className='text-5xl font-extrabold pb-2'>ZKC Media</h1>
-                    <p className='text-xl text-gray-500'>Explore the ideas throughout the world</p>
+                    <p className='text-4xl font-extrabold'>AL Media</p>
+                    <p className='text-lg text-gray-500'>Explore the ideas throughout the world</p>
                 </div>
             </div>
 
 
             {/* Right Side */}
-            <div className='flex items-center justify-center'>
-                <div className='bg-[color:var(--card-color)] p-4 xl:p-[3.5rem] rounded-md w-[35rem]'>
+            <div className='flex items-center justify-center mt-[-17rem] xl:mt-0'>
+                <div className='bg-[color:var(--card-color)] p-4 md:p-[3rem] xl:p-[3.5rem] py-9 rounded-md w-[35rem]'>
                     <form action="" className='flex flex-col gap-8' onSubmit={handleSubmit}>
                         <h3 className='text-center py-4 text-3xl text-[#ff5851] font-bold'>{isSignUp ? "Sign Up" : "Log In"}</h3>
                         <div className='flex flex-col gap-4'>
