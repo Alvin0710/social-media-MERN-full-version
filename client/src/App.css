@@ -54,6 +54,15 @@ html, body {
   background-color: var(--card-color);
 }
 
+.button:disabled {
+  background-color: white;
+  color: #ff5851;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  pointer-events: none;
+}
+
 
 @layer components {
   .button {
