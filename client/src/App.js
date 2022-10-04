@@ -13,7 +13,7 @@ function App() {
   const user = useSelector((state) => state.authReducer.authData);
 
   return (
-    <div className="overflow-hidden bg-[color:var(--main-background)] md:px-6 xl:px-[3rem]">
+    <div className="overflow-hidden bg-[color:var(--main-background)] md:px-6 xl:px-8 xl:pt-4">
       <div className="absolute top-[-18%] right-[0] w-[22rem] h-[22rem] rounded-[50%] bg-[#42c3a77e] blur-[72px]"></div>
       <div className="absolute top-[36%] left-[-8rem] w-[22rem] h-[22rem] rounded-[50%] bg-[#42c3a766] blur-[72px]"></div>
       <div className={user ? 'Home xl:mx-[3rem] relative md:grid md:grid-cols-[1fr_7fr] xl:grid-cols-1 gap-5 overflow-hidden h-screen' : 'Home xl:mx-[3rem] relative md:grid md:grid-cols-1 gap-5 overflow-hidden h-screen'}>

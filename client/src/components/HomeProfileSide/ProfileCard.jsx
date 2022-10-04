@@ -13,10 +13,25 @@ const ProfileCard = ({ location }) => {
     const posts = useSelector((state) => state.postReducer.posts)
 
     return (
-        <div className="rounded-lg overflow-clip bg-[color:var(--card-color)] flex flex-col relative gap-4">
+        <div className="rounded-lg overflow-clip bg-[color:var(--card-color)] flex flex-col relative gap-4 w-full">
             <div className='relative flex flex-col items-center justify-center'>
-                <img src={user.coverPicture ? serverPublic + user.coverPicture : serverPublic + "defaultCover.jpg"} alt="cover" className='w-full' />
-                <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.png"} alt="profile" className='w-[6rem] rounded-full absolute bottom-[-3rem] shadow-2xl' />
+                <img src={
+                    user.coverPicture
+                        ? serverPublic + user.coverPicture
+                        : serverPublic + "defaultCover.jpg"
+                }
+                    alt="cover"
+                    className='w-full max-h-[15rem] object-cover'
+                />
+
+
+                <img src={
+                    user.profilePicture
+                        ? serverPublic + user.profilePicture
+                        : serverPublic + "defaultProfile.png"
+                }
+                    alt="profile"
+                    className='w-[6rem] h-[6rem] rounded-full absolute bottom-[-3rem] shadow-2xl object-cover' />
             </div>
 
             <div className='flex flex-col items-center mt-[3rem] gap-1 pt-4 pb-2'>

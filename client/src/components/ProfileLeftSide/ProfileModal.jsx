@@ -21,10 +21,10 @@ function ProfileModal({ modalOpened, setModalOpened, data }) {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
-    const onImageChange = (e) => {
-        if (e.target.files && e.target.files[0]) {
-            let img = e.target.files[0]
-            e.target.name === "profileImage"
+    const onImageChange = (event) => {
+        if (event.target.files && event.target.files[0]) {
+            let img = event.target.files[0]
+            event.target.name === "profileImage"
                 ? setProfileImage(img)
                 : setCoverImage(img)
         }
@@ -32,21 +32,34 @@ function ProfileModal({ modalOpened, setModalOpened, data }) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        let userData = formData
-        if (profileImage) {
-            const data = new FormData()
-            const fileName = Date.now() + profileImage.name
-            data.append("name", fileName)
-            data.append("file", coverImage)
-            userData.coverPicture = fileName
+        let UserData = formData
 
+        if (profileImage) {
+            const data = new FormData();
+            const fileName = Date.now() + profileImage.name;
+            data.append("name", fileName);
+            data.append("file", profileImage);
+            UserData.profilePicture = fileName;
             try {
-                dispatch(uploadImage(data))
-            } catch (error) {
-                console.log(error)
+                dispatch(uploadImage(data));
+            } catch (err) {
+                console.log(err);
             }
         }
-        dispatch(updateUser(param.id, userData))
+
+        if (coverImage) {
+            const data = new FormData();
+            const fileName = Date.now() + coverImage.name;
+            data.append("name", fileName);
+            data.append("file", coverImage);
+            UserData.coverPicture = fileName;
+            try {
+                dispatch(uploadImage(data));
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        dispatch(updateUser(param.id, UserData))
         setModalOpened(false)
     }
 

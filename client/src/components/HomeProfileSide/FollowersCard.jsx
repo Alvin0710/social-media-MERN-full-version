@@ -11,7 +11,7 @@ const FollowersCard = () => {
                     <div className='flex items-center justify-between py-3'>
                         <span className='hidden'>{id}</span>
                         <div className='flex items-center gap-3'>
-                            <img src={follower.img} alt="" className='object-cover rounded-full w-[3.7rem] h-[3.7rem]' />
+                            <img src={follower.img} alt="" className='object-cover rounded-full w-[3.5rem] h-[3.5rem]' />
                             <div className='flex flex-col'>
                                 <span className='font-bold'>{follower.name}</span>
                                 <span className='text-gray-500 break-all'>@{follower.username}</span>

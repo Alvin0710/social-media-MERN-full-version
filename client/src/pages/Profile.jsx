@@ -6,7 +6,7 @@ import RightSide from '../components/RightSide/RightSide'
 
 const Profile = () => {
     return (
-        <div className='relative grid grid-cols-[1.4fr_3fr_1.3fr] gap-5 xl:mx-[3rem] mt-8'>
+        <div className='relative grid grid-cols-[1.4fr_3fr_1.3fr] gap-5 mt-8'>
             <ProfileLeft />
 
             <div className='overflow-auto h-screen'>
