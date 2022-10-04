@@ -11,7 +11,7 @@ const Profile = () => {
 
             <div className='overflow-auto h-screen'>
                 <div className='flex flex-col gap-4'>
-                    <ProfileCard />
+                    <ProfileCard location="profilePage" />
                     <PostSide />
                 </div>
             </div>

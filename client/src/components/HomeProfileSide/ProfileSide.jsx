@@ -8,7 +8,7 @@ const ProfileSide = () => {
         <div className='overflow-auto h-screen pb-9'>
             <div className='ProfileSide flex flex-col gap-y-8 items-center relative'>
                 <LogoSearch />
-                <ProfileCard />
+                <ProfileCard location = 'homepage' />
                 <FollowersCard />
             </div>
         </div>

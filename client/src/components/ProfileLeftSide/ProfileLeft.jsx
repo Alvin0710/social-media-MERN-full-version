@@ -7,7 +7,7 @@ import InfoCard from './InfoCard'
 
 const ProfileLeft = () => {
     return (
-        <div className='overflow-auto h-screen pb-8 px-3 md:px-0 xl:py-0 mt-8'>
+        <div className='overflow-auto h-screen pb-8 px-3 md:px-0 xl:py-0'>
             <div className='flex flex-col gap-6'>
                 <div className='hidden xl:block'>
                     <LogoSearch />

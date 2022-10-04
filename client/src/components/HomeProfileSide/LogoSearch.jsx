@@ -5,7 +5,7 @@ import TrendCard from '../RightSide/TrendCard'
 
 const LogoSearch = () => {
     return (
-        <div className='mt-8 xl:mt-0 px-3 md:px-0'>
+        <div className='xl:mt-0 px-3 md:px-0'>
             <div className='flex items-center gap-3 w-full pb-8 xl:pb-0'>
                 <a href="/"><img src={Logo} alt="logo" className='w-[35px] h-[30px]' /></a>
                 <div className='flex items-center justify-between bg-[#28343e12] rounded-[5px] p-[5px] w-full'>

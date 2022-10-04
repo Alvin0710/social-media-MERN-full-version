@@ -9,7 +9,7 @@ export const createPost = async (req, res) => {
 
     try {
         await newPost.save()
-        res.status(200).json("Post created!")
+        res.status(200).json(newPost)
     } catch (error) {
         res.status(500).json(error)
     }
@@ -67,26 +67,21 @@ export const deletePost = async (req, res) => {
 
 // Like or dislike a post
 export const likePost = async (req, res) => {
-    const id = req.params.id
-    const { userId } = req.body
-
+    const id = req.params.id;
+    const { userId } = req.body;
     try {
-        //Like the post
-        const post = await PostModel.findById(id)
-        if (!post.likes.includes(userId)) {
-            await post.updateOne({ $push: { likes: userId } })
-            res.status(200).json("Post liked")
+        const post = await PostModel.findById(id);
+        if (post.likes.includes(userId)) {
+            await post.updateOne({ $pull: { likes: userId } });
+            res.status(200).json("Post disliked");
+        } else {
+            await post.updateOne({ $push: { likes: userId } });
+            res.status(200).json("Post liked");
         }
-
-        else {
-            await post.updateOne({ $pull: { likes: userId } })
-            res.status(200).json("Post unliked")
-        }
-
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(error);
     }
-}
+};
 
 
 // Get Timeline Posts
